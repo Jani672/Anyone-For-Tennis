@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Anyone_for_Tennies_Web.props" />
+</Project>
