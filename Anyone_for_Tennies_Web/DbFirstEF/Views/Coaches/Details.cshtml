@@ -1,0 +1,62 @@
+﻿@model DbFirstEF.Models.Coach
+
+<div class="container my-5">
+    <h1 class="mb-4 text-center">Coach Details</h1>
+    <div class="text-center mb-4">
+        <a asp-controller="Home" asp-action="Schedules" asp-route-id="@Model.CoachId" class="btn btn-primary btn-lg">
+            Upcoming Coaching Sessions
+        </a>
+    </div>
+
+    <div class="card shadow-lg">
+        <div class="card-body">
+            <h4 class="card-title">Coach Information</h4>
+            <hr />
+            <div class="row mb-3">
+                <div class="col-sm-3 font-weight-bold">
+                    @Html.DisplayNameFor(model => model.FirstName):
+                </div>
+                <div class="col-sm-9">
+                    @Html.DisplayFor(model => model.FirstName)
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-3 font-weight-bold">
+                    @Html.DisplayNameFor(model => model.LastName):
+                </div>
+                <div class="col-sm-9">
+                    @Html.DisplayFor(model => model.LastName)
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-3 font-weight-bold">
+                    @Html.DisplayNameFor(model => model.Biography):
+                </div>
+                <div class="col-sm-9">
+                    @Html.DisplayFor(model => model.Biography)
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-3 font-weight-bold">
+                    Photo:
+                </div>
+                <div class="col-sm-9">
+                    @{
+                        var coachImagePath = Url.Content($"~/images/coach{Model.CoachId}.jpg");
+                    }
+                    <img src="@coachImagePath" alt="Coach Photo" class="img-fluid rounded" style="max-width: 150px;"
+                         onerror="this.onerror=null;this.src='~/images/default.jpg';" />
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a asp-action="Edit" asp-route-id="@Model.CoachId" class="btn btn-warning btn-lg">
+                    Edit Biography
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
