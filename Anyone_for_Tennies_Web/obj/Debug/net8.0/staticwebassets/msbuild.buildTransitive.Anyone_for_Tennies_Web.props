@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Anyone_for_Tennies_Web.props" />
-</Project>
