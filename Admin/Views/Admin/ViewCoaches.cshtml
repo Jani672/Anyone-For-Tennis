@@ -1,0 +1,44 @@
+@model IEnumerable<assignment3.Models.Coach>
+
+@{
+    ViewData["Title"] = "View Coaches";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Coaches</h2>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Coach ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var coach in Model)
+                    {
+                        <tr>
+                            <td>@coach.CoachID</td>
+                            <td>@coach.FirstName</td>
+                            <td>@coach.LastName</td>
+                            <td>
+                                <a asp-action="CoachProfile" asp-route-coachId="@coach.CoachID" class="btn btn-info btn-sm">View Profile</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info" role="alert">
+            No coaches available.
+        </div>
+    }
+</div>

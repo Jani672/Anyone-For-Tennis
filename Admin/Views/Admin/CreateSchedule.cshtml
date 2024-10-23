@@ -1,0 +1,44 @@
+@model IEnumerable<assignment3.Models.Coach>
+
+@{
+    ViewData["Title"] = "Create Schedule";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Create a New Schedule</h2>
+
+    <form asp-action="CreateSchedule" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" id="name" name="name" class="form-control" required placeholder="Enter schedule name" />
+        </div>
+
+        <div class="mb-3">
+            <label for="date" class="form-label">Date:</label>
+            <input type="date" id="date" name="date" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="location" class="form-label">Location:</label>
+            <input type="text" id="location" name="location" class="form-control" required placeholder="Enter location" />
+        </div>
+
+        <div class="mb-3">
+            <label for="coachId" class="form-label">Coach:</label>
+            <select id="coachId" name="coachId" class="form-select" required>
+                <option value="">Select a coach</option>
+                @foreach (var coach in Model)
+                {
+                    <option value="@coach.CoachID">@coach.FirstName @coach.LastName</option>
+                }
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="description" class="form-label">Description:</label>
+            <textarea id="description" name="description" class="form-control" rows="4" required placeholder="Enter schedule description"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Create Schedule</button>
+    </form>
+</div>

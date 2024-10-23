@@ -1,0 +1,67 @@
+@model IEnumerable<assignment3.Models.Schedule>
+
+@{
+    ViewData["Title"] = "View Schedules";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Schedules</h2>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Schedule ID</th>
+                        <th>Schedule Name</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                        <th>Coach</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var schedule in Model)
+                    {
+                        <tr>
+                            <td>@schedule.ScheduleID</td>
+                            <td>@schedule.Name</td>
+                            <td>@schedule.Date.ToString("dd MMM yyyy")</td>
+                            <td>@schedule.Location</td>
+                            <td>
+                                 @if (schedule.Coach != null)
+                                {
+                                    <a asp-action="CoachProfile" asp-route-coachId="@schedule.Coach.CoachID" class="text-decoration-none">
+                                        @schedule.Coach.FirstName @schedule.Coach.LastName
+                                    </a>
+                                }
+                                else
+                                {
+                                    <span>N/A</span>
+                                }
+                            </td>
+                            <td>@schedule.Description</td>
+                            <td>
+                                <a asp-action="EditSchedule" asp-route-id="@schedule.ScheduleID" class="btn btn-primary btn-sm">Edit</a>
+                            <form asp-action="DeleteSchedule" asp-route-id="@schedule.ScheduleID" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this schedule?');">
+                                Delete
+                            </button>
+                            </form>
+
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info" role="alert">
+            No schedules available.
+        </div>
+    }
+</div>

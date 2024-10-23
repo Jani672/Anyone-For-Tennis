@@ -8,27 +8,25 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Amantha Keshan\\.nuget\\packages\\": {}
+    "/Users/cloudsurfer/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Amantha Keshan\\Desktop\\Project\\Assisment 02\\Git\\Anyone_for_Tennies_Web\\Anyone_for_Tennies_Web\\Anyone_for_Tennies_Web.csproj",
+      "projectUniqueName": "/Users/cloudsurfer/Documents/assignment3/Anyone-For-Tennis/Anyone_for_Tennies_Web/Anyone_for_Tennies_Web.csproj",
       "projectName": "Anyone_for_Tennies_Web",
-      "projectPath": "C:\\Users\\Amantha Keshan\\Desktop\\Project\\Assisment 02\\Git\\Anyone_for_Tennies_Web\\Anyone_for_Tennies_Web\\Anyone_for_Tennies_Web.csproj",
-      "packagesPath": "C:\\Users\\Amantha Keshan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Amantha Keshan\\Desktop\\Project\\Assisment 02\\Git\\Anyone_for_Tennies_Web\\Anyone_for_Tennies_Web\\obj\\",
+      "projectPath": "/Users/cloudsurfer/Documents/assignment3/Anyone-For-Tennis/Anyone_for_Tennies_Web/Anyone_for_Tennies_Web.csproj",
+      "packagesPath": "/Users/cloudsurfer/.nuget/packages/",
+      "outputPath": "/Users/cloudsurfer/Documents/assignment3/Anyone-For-Tennis/Anyone_for_Tennies_Web/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Amantha Keshan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/cloudsurfer/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -70,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400-preview.0.24324.5/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

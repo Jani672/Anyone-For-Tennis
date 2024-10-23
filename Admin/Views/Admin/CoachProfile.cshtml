@@ -1,0 +1,49 @@
+@model assignment3.Models.Coach
+
+@{
+    ViewData["Title"] = "Coach Profile";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="text-center">
+                        @if (!string.IsNullOrEmpty(Model.Photo))
+                        {
+                            <img src="@Model.Photo" alt="@Model.FirstName @Model.LastName" class="img-fluid rounded-circle mb-3" style="max-width: 150px; height: auto;" />
+                        }
+                        else
+                        {
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Default_Profile_Picture.png" alt="Default Image" class="img-fluid rounded-circle mb-3" />
+                        }
+                    </div>
+
+                    <h3 class="card-title text-center">@Model.FirstName @Model.LastName</h3>
+                    <p class="text-center text-muted">Biography</p>
+                    <hr />
+
+                    <div class="mb-3">
+                        <strong>Biography:</strong>
+                        <p>@Model.Biography</p>
+                    </div>
+
+                    <div class="text-center">
+                        <a asp-action="ViewSchedulesByCoach" asp-controller="Admin" asp-route-coachId="@Model.CoachID" class="btn btn-primary">
+                            View Schedules for @Model.FirstName
+                        </a>
+                        <a asp-action="EditCoach" asp-route-id="@Model.CoachID" class="btn btn-secondary">
+                            Edit Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Include this script block if client-side validation isn't already enabled in your layout -->
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
