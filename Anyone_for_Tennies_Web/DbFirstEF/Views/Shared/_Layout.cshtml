@@ -1,0 +1,122 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Anyone for Tennis</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DbFirstEF.styles.css" asp-append-version="true" />
+</head>
+<body>
+    @{
+        var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+        var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+
+        //display navigation bars if not on Login1 or Register page
+        var showNavigationBars = !(currentController == "Account" && (currentAction == "Login1" || currentAction == "Register"));
+
+        //retrieve logged-in user's email from session via injected HttpContextAccessor
+        var loggedInEmail = HttpContextAccessor.HttpContext?.Session.GetString("UserEmail");
+    }
+
+    @if (showNavigationBars)
+    {
+        <!--Top(main) Navigation Bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop" aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTop">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/Home/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home/About">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home/Help">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/Account/CoachLogin">Coach Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Account/Display">My Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home/Schedules">Upcoming Coaching Sessions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Logout</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ms-auto">
+                        @if (!(currentController == "Account" && currentAction == "Login"))
+                        {
+                            <li class="nav-item d-flex align-items-center">
+                                <div class="text-white me-2">
+                                    <span class="fw-bold text-decoration-underline">Active Session...Logged-In User:</span>
+                                </div>
+                                @if (!string.IsNullOrEmpty(loggedInEmail))
+                                {
+                                    <div class="text-white me-2">
+                                        @loggedInEmail
+                                    </div>
+                                }
+                                <div class="profile-picture text-center">
+                                    <img src="~/images/coach.jpg" alt="Profile Picture" class="img-fluid" onerror="this.src='~/images/default.jpg';">
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Navigation Bar with Admin Controls-->
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <span class="navbar-text fw-bold text-dark">Admin Controls</span> 
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Members" asp-action="Index">Members</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Coaches" asp-action="Index">Coaches</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Schedules" asp-action="Index">Schedules</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    }
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
