@@ -1,0 +1,38 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.profile-picture {
+    position: relative;
+    width: 40px; /* Adjust as needed */
+    height: 60px; /* Make it taller than wider */
+    overflow: hidden; /* Ensure the image stays within the bounds */
+    border-radius: 5px; /* Rounded corners */
+    margin-left: 20px; /* Spacing from the rest of the nav */
+    margin-top: -10px; /* Slight overlap */
+}
+
+    .profile-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure image covers the div */
+        border: 2px solid white; /* Optional: Add border */
+    }
