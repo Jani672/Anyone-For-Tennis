@@ -1,0 +1,33 @@
+﻿@model DbFirstEF.Data.User
+
+@{
+    ViewData["Title"] = "Account Details";
+}
+
+<!-- Button to redirect to Schedules -->
+<div class="text-center mb-4">
+    <a href="https://localhost:7193/Home/Schedules" class="btn btn-info btn-lg">
+        View Upcoming Coaching Sessions
+    </a>
+</div>
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="card">
+    <div class="card-header">
+        <h2>User Details</h2>
+    </div>
+    <div class="card-body">
+        <p><strong>User ID:</strong> @Model.UserId</p>
+        <p><strong>First Name:</strong> @Model.FirstName</p>
+        <p><strong>Last Name:</strong> @Model.LastName</p>
+        <p><strong>Email:</strong> @Model.Email</p>
+        <p><strong>Address:</strong> @Model.Address</p>
+        <p><strong>Phone Number:</strong> @Model.PhoneNumber</p>
+        <p><strong>Date of Birth:</strong> @Model.DateOfBirth.ToString("d")</p> 
+    </div>
+    <div class="card-footer text-end">
+        <a asp-action="Edit" asp-route-id="@Model.UserId" class="btn btn-primary">Edit</a>
+        <a asp-action="Logout" class="btn btn-secondary">Logout</a>
+    </div>
+</div>
