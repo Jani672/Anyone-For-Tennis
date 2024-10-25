@@ -13,7 +13,7 @@ builder.Services.AddRazorPages();
 // Register API Controllers (backend)
 builder.Services.AddControllers();
 
-// Register DbContext with SQL Server (or any other database you're using)
+// Register DbContext with SQL Server 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -37,7 +37,7 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
-// Add Authentication and Authorization (add your own authentication scheme here if needed)
+// Add Authentication and Authorization 
 builder.Services.AddAuthentication("CookieAuth")
     .AddCookie("CookieAuth", options =>
     {
@@ -47,7 +47,7 @@ builder.Services.AddAuthentication("CookieAuth")
 
 builder.Services.AddAuthorization();
 
-// Add Swagger for API documentation (for development and debugging)
+// Add Swagger for API documentation
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
@@ -57,7 +57,7 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// Add CORS policy (in case your Razor Pages frontend needs to call the API)
+// Add CORS policy 
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins", policy =>

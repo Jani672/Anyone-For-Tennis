@@ -1,5 +1,4 @@
-﻿// ViewModels/EnrollmentCreateViewModel.cs
-namespace Anyone_for_Tennies.Models
+﻿namespace Anyone_for_Tennies.Models
 {
     public class EnrollmentCreateViewModel
     {
