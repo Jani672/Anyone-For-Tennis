@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Amantha Keshan\\Desktop\\Project\\Assisment 02\\Git\\Anyone_for_Tennies_Web\\Anyone_for_Tennies_Web\\Anyone_for_Tennies_Web.csproj",
+      "projectUniqueName": "C:\\Users\\Amantha Keshan\\Desktop\\Project\\Assisment 02\\Repo\\Anyone_for_Tennies_Web\\Anyone_for_Tennies_Web.csproj",
       "projectName": "Anyone_for_Tennies_Web",
-      "projectPath": "C:\\Users\\Amantha Keshan\\Desktop\\Project\\Assisment 02\\Git\\Anyone_for_Tennies_Web\\Anyone_for_Tennies_Web\\Anyone_for_Tennies_Web.csproj",
+      "projectPath": "C:\\Users\\Amantha Keshan\\Desktop\\Project\\Assisment 02\\Repo\\Anyone_for_Tennies_Web\\Anyone_for_Tennies_Web.csproj",
       "packagesPath": "C:\\Users\\Amantha Keshan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Amantha Keshan\\Desktop\\Project\\Assisment 02\\Git\\Anyone_for_Tennies_Web\\Anyone_for_Tennies_Web\\obj\\",
+      "outputPath": "C:\\Users\\Amantha Keshan\\Desktop\\Project\\Assisment 02\\Repo\\Anyone_for_Tennies_Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Amantha Keshan\\AppData\\Roaming\\NuGet\\NuGet.Config",
