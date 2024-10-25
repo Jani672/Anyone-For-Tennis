@@ -1,0 +1,38 @@
+﻿@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="auth-container">
+    <div class="auth-card">
+        <h2>Login</h2>
+        <form method="post">
+            <div class="input-group">
+                <label for="Email">Email</label>
+                <input type="email" id="Email" name="Email" placeholder="Enter your email" required />
+            </div>
+
+
+            <div class="input-group">
+                <label for="Password">Password</label>
+                <input type="password" id="Password" name="Password" placeholder="Enter your password" required />
+            </div>
+
+            <button type="submit" class="btn-primary">Login</button>
+
+            <p class="form-footer" style="margin-top: 1.5rem; font-size: 0.9rem; color:#000000">
+                Don't have an account?  &nbsp;
+                <a href="/Members/Register"
+                   style="color: #1e40af; text-decoration: underline;"
+                   onmouseover="this.style.color='#3b82f6'; this.style.textDecoration='underline';"
+                   onmouseout="this.style.color='#1e40af'; this.style.textDecoration='underline';">
+                    Sign up
+                </a>
+            </p>
+
+
+          
+        </form>
+    </div>
+</div>
