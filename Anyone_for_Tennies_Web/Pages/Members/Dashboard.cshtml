@@ -1,0 +1,46 @@
+﻿@page
+@model DashboardModel
+
+<h2>Upcoming Training Sessions</h2>
+
+<div class="table-container">
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Day</th>
+                <th>Coach</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2024-10-20</td>
+                <td>10:00 AM</td>
+                <td>Monday</td>
+                <td>
+                    John Doe
+                    <!-- View Button to View Coach Profile -->
+                    <a href="/Members/ViewCoachProfile"
+                       style="
+                           display: inline-block;
+                           padding: 5px 10px;
+                           background-color: #4CAF50; /* Green for 'View' button */
+                           color: white;
+                           font-size: 0.8rem;
+                           border-radius: 5px;
+                           text-decoration: none;
+                           margin-left: 10px;
+                           transition: background-color 0.3s ease, box-shadow 0.3s ease;
+                       "
+                       onmouseover="this.style.backgroundColor='#45a049'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';"
+                       onmouseout="this.style.backgroundColor='#4CAF50'; this.style.boxShadow='none';">
+                        View
+                    </a>
+                </td>
+                <td><a href="/Members/EnrollConfirmation" class="enroll-btn">Enroll</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

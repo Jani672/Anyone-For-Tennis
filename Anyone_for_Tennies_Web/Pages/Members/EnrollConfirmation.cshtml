@@ -1,0 +1,78 @@
+﻿@page
+@model EnrollConfirmationModel
+
+<div class="modal"
+     style="
+        display: flex; /* Center the modal */
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+     ">
+    <div class="modal-content"
+         style="
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 40%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Deep shadow for effect */
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+         ">
+        <h4 style="
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 15px;
+        ">
+            Are you sure you want to enroll in this session?
+        </h4>
+
+        <div class="modal-footer"
+             style="
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+             ">
+            <a href="/Members/Success"
+               style="
+                   display: inline-block;
+                   padding: 10px 20px;
+                   background-color: #28a745; /* Success green */
+                   color: white;
+                   font-size: 1rem;
+                   font-weight: bold;
+                   text-decoration: none;
+                   border-radius: 8px;
+                   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+               "
+               onmouseover="this.style.backgroundColor='#218838'; this.style.boxShadow='0 4px 8px rgba(33, 136, 56, 0.3)';"
+               onmouseout="this.style.backgroundColor='#28a745'; this.style.boxShadow='none';">
+                Yes
+            </a>
+
+            <a href="/Members/Dashboard"
+               style="
+                   display: inline-block;
+                   padding: 10px 20px;
+                   background-color: #dc3545; /* Danger red */
+                   color: white;
+                   font-size: 1rem;
+                   font-weight: bold;
+                   text-decoration: none;
+                   border-radius: 8px;
+                   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+               "
+               onmouseover="this.style.backgroundColor='#c82333'; this.style.boxShadow='0 4px 8px rgba(200, 35, 51, 0.3)';"
+               onmouseout="this.style.backgroundColor='#dc3545'; this.style.boxShadow='none';">
+                No
+            </a>
+        </div>
+    </div>
+</div>

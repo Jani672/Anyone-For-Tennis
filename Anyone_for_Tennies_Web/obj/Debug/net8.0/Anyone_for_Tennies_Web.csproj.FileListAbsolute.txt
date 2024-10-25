@@ -28,3 +28,14 @@ C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Git\Anyone_for_Tennies_Web\
 C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Git\Anyone_for_Tennies_Web\Anyone_for_Tennies_Web\obj\Debug\net8.0\Anyone_for_Tennies_Web.pdb
 C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Git\Anyone_for_Tennies_Web\Anyone_for_Tennies_Web\obj\Debug\net8.0\Anyone_for_Tennies_Web.genruntimeconfig.cache
 C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Git\Anyone_for_Tennies_Web\Anyone_for_Tennies_Web\obj\Debug\net8.0\ref\Anyone_for_Tennies_Web.dll
+C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Repo\Anyone_for_Tennies_Web\obj\Debug\net8.0\Anyone_for_Tennies_Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Repo\Anyone_for_Tennies_Web\obj\Debug\net8.0\Anyone_for_Tennies_Web.AssemblyInfoInputs.cache
+C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Repo\Anyone_for_Tennies_Web\obj\Debug\net8.0\Anyone_for_Tennies_Web.AssemblyInfo.cs
+C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Repo\Anyone_for_Tennies_Web\obj\Debug\net8.0\Anyone_for_Tennies_Web.csproj.CoreCompileInputs.cache
+C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Repo\Anyone_for_Tennies_Web\obj\Debug\net8.0\Anyone_for_Tennies_Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Repo\Anyone_for_Tennies_Web\obj\Debug\net8.0\Anyone_for_Tennies_Web.RazorAssemblyInfo.cache
+C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Repo\Anyone_for_Tennies_Web\obj\Debug\net8.0\Anyone_for_Tennies_Web.RazorAssemblyInfo.cs
+C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Repo\Anyone_for_Tennies_Web\obj\Debug\net8.0\Anyone_for_Tennies_Web.sourcelink.json
+C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Repo\Anyone_for_Tennies_Web\obj\Debug\net8.0\Anyone_for_Tennies_Web.dll
+C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Repo\Anyone_for_Tennies_Web\obj\Debug\net8.0\refint\Anyone_for_Tennies_Web.dll
+C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Repo\Anyone_for_Tennies_Web\obj\Debug\net8.0\Anyone_for_Tennies_Web.pdb
