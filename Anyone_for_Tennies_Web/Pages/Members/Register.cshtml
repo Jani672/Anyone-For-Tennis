@@ -1,0 +1,201 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="auth-container">
+    <div class="auth-card">
+        <h2>Create an Account</h2>
+        <div id="form-container">
+            <form method="post" id="registerForm">
+                <div class="input-group" style="margin-bottom: 20px; font-family: Arial, sans-serif; width:98.5%;">
+                    <label for="Role" style="font-weight: bold; color: #4a90e2; font-size: 16px;">Select Role</label>
+                    <select id="Role" name="Role" onchange="loadFields(this.value)" required
+                            style="width: 100%; padding: 10px; border-radius: 5px; border: 2px solid #4a90e2; background-color: #f9f9f9; color: #333; font-size: 16px; cursor: pointer;">
+                        <option value="" style="color: #aaa;">-- Select Role --</option>
+                        <option value="Member" style="color: #333;">Member</option>
+                        <option value="Coach" style="color: #333;">Coach</option>
+                        <option value="Admin" style="color: #333;">Admin</option>
+                    </select>
+                </div>
+
+
+
+                <!-- Common Fields -->
+                <div class="input-group">
+                    <label for="FirstName">First Name</label>
+                    <input type="text" id="FirstName" name="FirstName" placeholder="Enter your first name" required />
+                </div>
+
+                <div class="input-group">
+                    <label for="LastName">Last Name</label>
+                    <input type="text" id="LastName" name="LastName" placeholder="Enter your last name" required />
+                </div>
+
+                <div class="input-group">
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" name="Email" placeholder="Enter your email" required />
+                </div>
+
+                <div class="input-group">
+                    <label for="Password">Password</label>
+                    <input type="password" id="Password" name="Password" placeholder="Enter your password" required />
+                </div>
+
+                <!-- Role Specific Fields -->
+                <div id="additionalFields"></div>
+
+                <button type="submit" class="btn-primary" style="width:56%;">Register</button>
+
+                <p class="form-footer" style="margin-top: 1.5rem; font-size: 0.9rem; color:#000000">
+                    Already have an account? &nbsp;
+                    <a href="/Members/Login"
+                       style="color: #1e40af; text-decoration: underline;"
+                       onmouseover="this.style.color='#3b82f6'; this.style.textDecoration='underline';"
+                       onmouseout="this.style.color='#1e40af'; this.style.textDecoration='underline';">
+                        Log in
+                    </a>
+                </p>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function loadFields(role) {
+        const additionalFields = document.getElementById('additionalFields');
+        additionalFields.innerHTML = ''; // Clear previous fields
+
+        if (role === 'Member') {
+            additionalFields.innerHTML = `
+                <div class="input-group">
+                    <label for="PhoneNumber">Phone Number</label>
+                    <input type="text" id="PhoneNumber" name="PhoneNumber" placeholder="Enter your phone number" />
+                </div>
+                <div class="input-group">
+                    <label for="Address">Address</label>
+                    <textarea id="Address" name="Address" placeholder="Enter your address"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="DateOfBirth">Date of Birth</label>
+                    <input type="date" id="DateOfBirth" name="DateOfBirth" />
+                </div>
+            `;
+        } else if (role === 'Coach') {
+            additionalFields.innerHTML = `
+                <div class="input-group">
+                    <label for="Biography">Biography</label>
+                    <textarea id="Biography" name="Biography" placeholder="Enter your biography"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="Experience">Experience</label>
+                    <input type="text" id="Experience" name="Experience" placeholder="Enter your experience" />
+                </div>
+                <div class="input-group">
+                    <label for="PhoneNumber">Phone Number</label>
+                    <input type="text" id="PhoneNumber" name="PhoneNumber" placeholder="Enter your phone number" />
+                </div>
+                <div class="input-group">
+                    <label for="Address">Address</label>
+                    <textarea id="Address" name="Address" placeholder="Enter your address"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="DateOfBirth">Date of Birth</label>
+                    <input type="date" id="DateOfBirth" name="DateOfBirth" />
+                </div>
+            `;
+        } else if (role === 'Admin') {
+            additionalFields.innerHTML = `
+                <div class="input-group">
+                    <label for="PhoneNumber">Phone Number</label>
+                    <input type="text" id="PhoneNumber" name="PhoneNumber" placeholder="Enter your phone number" />
+                </div>
+                <div class="input-group">
+                    <label for="Address">Address</label>
+                    <textarea id="Address" name="Address" placeholder="Enter your address"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="DateOfBirth">Date of Birth</label>
+                    <input type="date" id="DateOfBirth" name="DateOfBirth" />
+                </div>
+            `;
+        }
+    }
+</script>
+
+<!-- Styles -->
+<style>
+    .auth-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .auth-card {
+        background: #ffffff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 1000px; /* Adjust this value to your desired width */
+        max-width: 200%; /* Ensures the form doesn't exceed the screen size */
+    }
+
+    #form-container {
+        max-height: 450px;
+        overflow-y: auto; /* Enables vertical scrolling */
+        width: 100%; /* Keeps the width fixed */
+    }
+
+    .input-group {
+        margin-bottom: 1rem;
+        width:96%;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    .btn-primary {
+        background-color: #1e40af;
+        color: #ffffff;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+        .btn-primary:hover {
+            background-color: #3b82f6;
+        }
+
+    .form-footer {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .login-link {
+        color: #1e40af;
+        text-decoration: underline;
+    }
+
+        .login-link:hover {
+            color: #3b82f6;
+        }
+</style>
