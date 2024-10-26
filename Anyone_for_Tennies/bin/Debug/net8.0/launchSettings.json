@@ -1,0 +1,37 @@
+﻿{
+    "iisSettings": {
+        "windowsAuthentication": false,
+        "anonymousAuthentication": true,
+        "iisExpress": {
+            "applicationUrl": "http://localhost:64872",
+            "sslPort": 44377
+        }
+    },
+    "profiles": {
+        "BackendAPI": {
+            "commandName": "Project",
+            "launchBrowser": true,
+            "launchUrl": "api/WeatherForecast", // This will open the backend API in the browser.
+            "applicationUrl": "https://localhost:5001;http://localhost:5000", // Backend API on port 5000/5001
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        },
+        "FrontendRazorPages": {
+            "commandName": "Project",
+            "launchBrowser": true,
+            "launchUrl": "", // This will open the Razor Pages frontend
+            "applicationUrl": "https://localhost:5003;http://localhost:5002", // Razor Pages on port 5002/5003
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        },
+        "IIS Express": {
+            "commandName": "IISExpress",
+            "launchBrowser": true,
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        }
+    }
+}

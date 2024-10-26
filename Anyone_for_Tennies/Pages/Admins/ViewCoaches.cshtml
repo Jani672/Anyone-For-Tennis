@@ -1,0 +1,317 @@
+﻿@page
+@model Anyone_for_Tennies.Pages.Admins.ViewCoachesModel
+<h2>Coaches List</h2>
+
+
+<div class="table-container">
+    <table class="styled-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Contact Info</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>John Doe
+                    <!-- View Button to open the modal -->
+                    <a href="javascript:void(0)"
+                       onclick=""
+                       style="display: inline-block; padding: 5px 12px; background-color: #4CAF50; color: white; font-size: 0.8rem; border-radius: 5px; text-decoration: none; margin-left: 10px; transition: background-color 0.3s ease, box-shadow 0.3s ease;"
+                       onmouseover="this.style.backgroundColor='#45a049'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';"
+                       onmouseout="this.style.backgroundColor='#4CAF50'; this.style.boxShadow='none';">
+                        View
+                    </a>
+                </td>
+                <td>john@example.com</td>
+                <td>
+                    <!-- Edit Button - Yellow -->
+                    <a href="/Admins/EditMember"
+                       style="
+               display: inline-block;
+               padding: 8px 15px;
+               background-color: #f1c40f; /* Yellow background */
+               color: white;
+               border-radius: 5px;
+               text-decoration: none;
+               font-weight: bold;
+               transition: background-color 0.3s ease, box-shadow 0.3s ease;
+           "
+                       onmouseover="this.style.backgroundColor='#f39c12'; this.style.boxShadow='0 4px 8px rgba(243, 156, 18, 0.4)';"
+                       onmouseout="this.style.backgroundColor='#f1c40f'; this.style.boxShadow='none';">
+                        Edit
+                    </a>
+                </td>
+                <td>
+                    <!-- Delete Button - Red -->
+                    <a href="/Admins/DeleteMember"
+                       style="
+               display: inline-block;
+               padding: 8px 15px;
+               background-color: #e74c3c; /* Red background */
+               color: white;
+               border-radius: 5px;
+               text-decoration: none;
+               font-weight: bold;
+               transition: background-color 0.3s ease, box-shadow 0.3s ease;
+           "
+                       onmouseover="this.style.backgroundColor='#c0392b'; this.style.boxShadow='0 4px 8px rgba(192, 57, 43, 0.4)';"
+                       onmouseout="this.style.backgroundColor='#e74c3c'; this.style.boxShadow='none';">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>John Doe
+                    <!-- View Button to open the modal -->
+                    <a href="javascript:void(0)"
+                       onclick=""
+                       style="display: inline-block; padding: 5px 12px; background-color: #4CAF50; color: white; font-size: 0.8rem; border-radius: 5px; text-decoration: none; margin-left: 10px; transition: background-color 0.3s ease, box-shadow 0.3s ease;"
+                       onmouseover="this.style.backgroundColor='#45a049'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';"
+                       onmouseout="this.style.backgroundColor='#4CAF50'; this.style.boxShadow='none';">
+                        View
+                    </a>
+                </td>
+                <td>john@example.com</td>
+                <td>
+                    <!-- Edit Button - Yellow -->
+                    <a href="/Admins/EditMember"
+                       style="
+               display: inline-block;
+               padding: 8px 15px;
+               background-color: #f1c40f; /* Yellow background */
+               color: white;
+               border-radius: 5px;
+               text-decoration: none;
+               font-weight: bold;
+               transition: background-color 0.3s ease, box-shadow 0.3s ease;
+           "
+                       onmouseover="this.style.backgroundColor='#f39c12'; this.style.boxShadow='0 4px 8px rgba(243, 156, 18, 0.4)';"
+                       onmouseout="this.style.backgroundColor='#f1c40f'; this.style.boxShadow='none';">
+                        Edit
+                    </a>
+                </td>
+                <td>
+                    <!-- Delete Button - Red -->
+                    <a href="/Admins/DeleteMember"
+                       style="
+               display: inline-block;
+               padding: 8px 15px;
+               background-color: #e74c3c; /* Red background */
+               color: white;
+               border-radius: 5px;
+               text-decoration: none;
+               font-weight: bold;
+               transition: background-color 0.3s ease, box-shadow 0.3s ease;
+           "
+                       onmouseover="this.style.backgroundColor='#c0392b'; this.style.boxShadow='0 4px 8px rgba(192, 57, 43, 0.4)';"
+                       onmouseout="this.style.backgroundColor='#e74c3c'; this.style.boxShadow='none';">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>John Doe
+                    <!-- View Button to open the modal -->
+                    <a href="javascript:void(0)"
+                       onclick=""
+                       style="display: inline-block; padding: 5px 12px; background-color: #4CAF50; color: white; font-size: 0.8rem; border-radius: 5px; text-decoration: none; margin-left: 10px; transition: background-color 0.3s ease, box-shadow 0.3s ease;"
+                       onmouseover="this.style.backgroundColor='#45a049'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';"
+                       onmouseout="this.style.backgroundColor='#4CAF50'; this.style.boxShadow='none';">
+                        View
+                    </a>
+                </td>
+                <td>john@example.com</td>
+                <td>
+                    <!-- Edit Button - Yellow -->
+                    <a href="/Admins/EditMember"
+                       style="
+               display: inline-block;
+               padding: 8px 15px;
+               background-color: #f1c40f; /* Yellow background */
+               color: white;
+               border-radius: 5px;
+               text-decoration: none;
+               font-weight: bold;
+               transition: background-color 0.3s ease, box-shadow 0.3s ease;
+           "
+                       onmouseover="this.style.backgroundColor='#f39c12'; this.style.boxShadow='0 4px 8px rgba(243, 156, 18, 0.4)';"
+                       onmouseout="this.style.backgroundColor='#f1c40f'; this.style.boxShadow='none';">
+                        Edit
+                    </a>
+                </td>
+                <td>
+                    <!-- Delete Button - Red -->
+                    <a href="/Admins/DeleteMember"
+                       style="
+               display: inline-block;
+               padding: 8px 15px;
+               background-color: #e74c3c; /* Red background */
+               color: white;
+               border-radius: 5px;
+               text-decoration: none;
+               font-weight: bold;
+               transition: background-color 0.3s ease, box-shadow 0.3s ease;
+           "
+                       onmouseover="this.style.backgroundColor='#c0392b'; this.style.boxShadow='0 4px 8px rgba(192, 57, 43, 0.4)';"
+                       onmouseout="this.style.backgroundColor='#e74c3c'; this.style.boxShadow='none';">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>John Doe
+                    <!-- View Button to open the modal -->
+                    <a href="javascript:void(0)"
+                       onclick=""
+                       style="display: inline-block; padding: 5px 12px; background-color: #4CAF50; color: white; font-size: 0.8rem; border-radius: 5px; text-decoration: none; margin-left: 10px; transition: background-color 0.3s ease, box-shadow 0.3s ease;"
+                       onmouseover="this.style.backgroundColor='#45a049'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';"
+                       onmouseout="this.style.backgroundColor='#4CAF50'; this.style.boxShadow='none';">
+                        View
+                    </a>
+                </td>
+                <td>john@example.com</td>
+                <td>
+                    <!-- Edit Button - Yellow -->
+                    <a href="/Admins/EditMember"
+                       style="
+               display: inline-block;
+               padding: 8px 15px;
+               background-color: #f1c40f; /* Yellow background */
+               color: white;
+               border-radius: 5px;
+               text-decoration: none;
+               font-weight: bold;
+               transition: background-color 0.3s ease, box-shadow 0.3s ease;
+           "
+                       onmouseover="this.style.backgroundColor='#f39c12'; this.style.boxShadow='0 4px 8px rgba(243, 156, 18, 0.4)';"
+                       onmouseout="this.style.backgroundColor='#f1c40f'; this.style.boxShadow='none';">
+                        Edit
+                    </a>
+                </td>
+                <td>
+                    <!-- Delete Button - Red -->
+                    <a href="/Admins/DeleteMember"
+                       style="
+               display: inline-block;
+               padding: 8px 15px;
+               background-color: #e74c3c; /* Red background */
+               color: white;
+               border-radius: 5px;
+               text-decoration: none;
+               font-weight: bold;
+               transition: background-color 0.3s ease, box-shadow 0.3s ease;
+           "
+                       onmouseover="this.style.backgroundColor='#c0392b'; this.style.boxShadow='0 4px 8px rgba(192, 57, 43, 0.4)';"
+                       onmouseout="this.style.backgroundColor='#e74c3c'; this.style.boxShadow='none';">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>John Doe
+                    <!-- View Button to open the modal -->
+                    <a href="javascript:void(0)"
+                       onclick=""
+                       style="display: inline-block; padding: 5px 12px; background-color: #4CAF50; color: white; font-size: 0.8rem; border-radius: 5px; text-decoration: none; margin-left: 10px; transition: background-color 0.3s ease, box-shadow 0.3s ease;"
+                       onmouseover="this.style.backgroundColor='#45a049'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';"
+                       onmouseout="this.style.backgroundColor='#4CAF50'; this.style.boxShadow='none';">
+                        View
+                    </a>
+                </td>
+                <td>john@example.com</td>
+                <td>
+                    <!-- Edit Button - Yellow -->
+                    <a href="/Admins/EditMember"
+                       style="
+               display: inline-block;
+               padding: 8px 15px;
+               background-color: #f1c40f; /* Yellow background */
+               color: white;
+               border-radius: 5px;
+               text-decoration: none;
+               font-weight: bold;
+               transition: background-color 0.3s ease, box-shadow 0.3s ease;
+           "
+                       onmouseover="this.style.backgroundColor='#f39c12'; this.style.boxShadow='0 4px 8px rgba(243, 156, 18, 0.4)';"
+                       onmouseout="this.style.backgroundColor='#f1c40f'; this.style.boxShadow='none';">
+                        Edit
+                    </a>
+                </td>
+                <td>
+                    <!-- Delete Button - Red -->
+                    <a href="/Admins/DeleteMember"
+                       style="
+               display: inline-block;
+               padding: 8px 15px;
+               background-color: #e74c3c; /* Red background */
+               color: white;
+               border-radius: 5px;
+               text-decoration: none;
+               font-weight: bold;
+               transition: background-color 0.3s ease, box-shadow 0.3s ease;
+           "
+                       onmouseover="this.style.backgroundColor='#c0392b'; this.style.boxShadow='0 4px 8px rgba(192, 57, 43, 0.4)';"
+                       onmouseout="this.style.backgroundColor='#e74c3c'; this.style.boxShadow='none';">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>John Doe
+                    <!-- View Button to open the modal -->
+                    <a href="javascript:void(0)"
+                       onclick=""
+                       style="display: inline-block; padding: 5px 12px; background-color: #4CAF50; color: white; font-size: 0.8rem; border-radius: 5px; text-decoration: none; margin-left: 10px; transition: background-color 0.3s ease, box-shadow 0.3s ease;"
+                       onmouseover="this.style.backgroundColor='#45a049'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';"
+                       onmouseout="this.style.backgroundColor='#4CAF50'; this.style.boxShadow='none';">
+                        View
+                    </a>
+                </td>
+                <td>john@example.com</td>
+                <td>
+                    <!-- Edit Button - Yellow -->
+                    <a href="/Admins/EditMember"
+                       style="
+               display: inline-block;
+               padding: 8px 15px;
+               background-color: #f1c40f; /* Yellow background */
+               color: white;
+               border-radius: 5px;
+               text-decoration: none;
+               font-weight: bold;
+               transition: background-color 0.3s ease, box-shadow 0.3s ease;
+           "
+                       onmouseover="this.style.backgroundColor='#f39c12'; this.style.boxShadow='0 4px 8px rgba(243, 156, 18, 0.4)';"
+                       onmouseout="this.style.backgroundColor='#f1c40f'; this.style.boxShadow='none';">
+                        Edit
+                    </a>
+                </td>
+                <td>
+                    <!-- Delete Button - Red -->
+                    <a href="/Admins/DeleteMember"
+                       style="
+               display: inline-block;
+               padding: 8px 15px;
+               background-color: #e74c3c; /* Red background */
+               color: white;
+               border-radius: 5px;
+               text-decoration: none;
+               font-weight: bold;
+               transition: background-color 0.3s ease, box-shadow 0.3s ease;
+           "
+                       onmouseover="this.style.backgroundColor='#c0392b'; this.style.boxShadow='0 4px 8px rgba(192, 57, 43, 0.4)';"
+                       onmouseout="this.style.backgroundColor='#e74c3c'; this.style.boxShadow='none';">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+
+
+    </tbody>
+    </table>
+</div>
+
+

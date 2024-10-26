@@ -1,0 +1,115 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="hero-content">
+        <h1 class="display-4">Welcome</h1>
+        <p>
+            Ready to up your game? <strong>Anyone for Tennis</strong> brings players together for fun, learning, and winning. Let’s hit the court!
+        </p>
+        <a href="https://learn.microsoft.com/aspnet/core" class="cta-btn">Learn More</a>
+    </div>
+</div>
+
+<!-- Training Sessions Table -->
+<div class="table-container">
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Day</th>
+                <th>Coach</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2024-10-20</td>
+                <td>10:00 AM</td>
+                <td>Monday</td>
+                <td>
+                    John Doe
+                    <!-- View Button to open the modal -->
+                    <a href="javascript:void(0)"
+                       onclick="openModal('coach1')"
+                       style="display: inline-block; padding: 5px 12px; background-color: #4CAF50; color: white; font-size: 0.8rem; border-radius: 5px; text-decoration: none; margin-left: 10px; transition: background-color 0.3s ease, box-shadow 0.3s ease;"
+                       onmouseover="this.style.backgroundColor='#45a049'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';"
+                       onmouseout="this.style.backgroundColor='#4CAF50'; this.style.boxShadow='none';">
+                        View
+                    </a>
+                </td>
+                <td><a href="javascript:void(0)" onclick="openModal('enrollConfirm')" class="enroll-btn">Enroll</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Creative Modal for Coach Profile -->
+<div id="coach1"
+     style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center;">
+    <div style="background-color: #fff; padding: 30px; border-radius: 12px; width: 40%; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); transition: all 0.3s ease-in-out; position: relative;">
+        <!-- Close Button -->
+        <span style="position: absolute; top: 10px; right: 15px; color: #888; font-size: 24px; font-weight: bold; cursor: pointer; transition: color 0.3s ease;" onclick="closeModal('coach1')" onmouseover="this.style.color='#e3342f';" onmouseout="this.style.color='#888';">&times;</span>
+
+        <!-- Modal Content -->
+        <h2 style="margin-bottom: 20px; font-size: 24px; color: #333; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">Coach Profile: John Doe</h2>
+        <p style="font-size: 18px; color: #555;"><strong>Email:</strong> john@example.com</p>
+        <p style="font-size: 18px; color: #555;"><strong>Experience:</strong> 10 years of coaching professional players.</p>
+        <p style="font-size: 18px; color: #555;"><strong>Achievements:</strong> Winner of XYZ Championship, Top Coach Award 2022.</p>
+        <p style="font-size: 18px; color: #555;"><strong>Email:</strong> john@example.com</p>
+        <p style="font-size: 18px; color: #555;"><strong>Experience:</strong> 10 years of coaching professional players.</p>
+        <p style="font-size: 18px; color: #555;"><strong>Achievements:</strong> Winner of XYZ Championship, Top Coach Award 2022.</p>
+    </div>
+</div>
+
+<!-- Creative Modal for Enroll Confirmation -->
+<div id="enrollConfirm"
+     style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center;">
+    <div style="background-color: white; padding: 30px; border-radius: 12px; width: 40%; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); text-align: center; transition: all 0.3s ease-in-out;">
+        <h4 style="font-size: 1.5rem; color: #333; margin-bottom: 20px; border-bottom: 2px solid #4CAF50; padding-bottom: 15px;">Are you sure you want to enroll in this session?</h4>
+
+        <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+            <a href="/Members/Success"
+               style="display: inline-block; padding: 10px 50px; background-color: #28a745; color: white; font-size: 1rem; font-weight: bold; text-decoration: none; border-radius: 8px; transition: background-color 0.3s ease, box-shadow 0.3s ease;"
+               onmouseover="this.style.backgroundColor='#218838'; this.style.boxShadow='0 4px 8px rgba(33, 136, 56, 0.3)';"
+               onmouseout="this.style.backgroundColor='#28a745'; this.style.boxShadow='none';">
+                Yes
+            </a>
+
+            <a href="/Members/Success"
+               style="display: inline-block; padding: 10px 50px; background-color: #dc3545; color: white; font-size: 1rem; font-weight: bold; text-decoration: none; border-radius: 8px; transition: background-color 0.3s ease, box-shadow 0.3s ease;"
+               onmouseover="this.style.backgroundColor='#c82333'; this.style.boxShadow='0 4px 8px rgba(200, 35, 51, 0.3)';"
+               onmouseout="this.style.backgroundColor='#dc3545'; this.style.boxShadow='none';">
+                No
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript for Modal Functionality -->
+<script>
+    // Function to open the modal
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = "flex"; // Using flex to center it
+    }
+
+    // Function to close the modal
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        var modals = document.querySelectorAll(".modal");
+        modals.forEach(function(modal) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+    }
+</script>

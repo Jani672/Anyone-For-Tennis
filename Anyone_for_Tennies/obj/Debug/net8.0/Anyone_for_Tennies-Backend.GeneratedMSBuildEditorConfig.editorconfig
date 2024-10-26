@@ -1,0 +1,87 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Anyone_for_Tennies-Backend
+build_property.RootNamespace = Anyone_for_Tennies-Backend
+build_property.ProjectDir = C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Anyone_for_Tennies\Anyone_for_Tennies\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Amantha Keshan\Desktop\Project\Assisment 02\Anyone_for_Tennies\Anyone_for_Tennies
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/Admins/AssignCoachToSchedule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5zXEFzc2lnbkNvYWNoVG9TY2hlZHVsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/Admins/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5zXERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/Admins/ViewCoaches.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5zXFZpZXdDb2FjaGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/Admins/ViewMembers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5zXFZpZXdNZW1iZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/Coaches/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29hY2hlc1xEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/Coaches/EnrolledMembersPopup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29hY2hlc1xFbnJvbGxlZE1lbWJlcnNQb3B1cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/Members/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyc1xEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/Members/EnrollConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyc1xFbnJvbGxDb25maXJtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/Members/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyc1xMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/Members/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyc1xSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Amantha Keshan/Desktop/Project/Assisment 02/Anyone_for_Tennies/Anyone_for_Tennies/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1hzp6zso89
